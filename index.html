@@ -409,7 +409,7 @@ var lat=Math.round(performance.now()-t0);
 document.getElementById('ping').textContent=lat+'ms';
 log('LINK ESTABLISHED');setSt('busy','SYNCING');
 ws.send(JSON.stringify({setup:{
-model:'models/gemini-3.8-live',
+model:'models/gemini-3.1-flash-live-preview',
 generationConfig:{responseModalities:['AUDIO'],speechConfig:{voiceConfig:{prebuiltVoiceConfig:{voiceName:'Kore'}}}},
 systemInstruction:{parts:[{text:selChar.base+' '+MODES[curMode]}]},
 inputAudioTranscription:{},outputAudioTranscription:{}
